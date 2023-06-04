@@ -22,7 +22,9 @@ body {
     background-color: black;
     display: inline;
     font-weight: 400;
-    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    border: 10px white;
+    border-radius: 10px;
 }
 #remove {
     display: block;

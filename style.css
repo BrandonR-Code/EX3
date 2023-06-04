@@ -4,7 +4,7 @@
 }
 
 body {
-    background: gray;
+    background: red;
 }
 
 #clock {
@@ -17,6 +17,15 @@ body {
     margin: auto;
     padding: 2rem 3rem;
     color: white;
-    background-color: red;
+    background-color: blue;
+    cursor: pointer;
+}
+
+#reset {
+    display: block;
+    margin: auto;
+    padding: 2rem 3rem;
+    color: white;
+    background-color: black;
     cursor: pointer;
 }

@@ -14,6 +14,11 @@ clock.setMinutes(now.getMinutes());
 clock.setSeconds(now.getSeconds());
 console.log(clock)
 
+function formatTime(time) {
+    return time < 10 ? '0' + time: time;
+}
+
+
 //Intervals
 setInterval(function() {
     clock.seconds++
@@ -28,6 +33,17 @@ setInterval(function() {
     if(clock.hours === 24){
         clock.hours = 0;
     }
+    document.getElementById('clock').innerHTML = formatTime(clock.hours) + ":" + formatTime(clock.minutes) + ':' + formatTime(clock.seconds);
 }, 1000);
+document.getElementById('remove').onclick = function() {
+    let element = document.querySelector('clock');//queryselector for selecting css
+    element.parentNode.removeChild(element);
+};
 
-console.log(clock);
+let clockElement = document.querySelector('#clock');
+
+document.getElementById('reset').onclick = function() {
+    clock.hours = 0;
+    clock.minutes = 0;
+    clock.seconds = 0;
+}

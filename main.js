@@ -36,7 +36,7 @@ setInterval(function() {
     document.getElementById('clock').innerHTML = formatTime(clock.hours) + ":" + formatTime(clock.minutes) + ':' + formatTime(clock.seconds);
 }, 1000);
 document.getElementById('remove').onclick = function() {
-    let element = document.querySelector('clock');//queryselector for selecting css
+    let element = document.getElementById('clock');//queryselector for selecting css
     element.parentNode.removeChild(element);
 };
 
